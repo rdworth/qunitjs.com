@@ -5,143 +5,143 @@
 <title>QUnit - Welcome</title>
 <link rel="stylesheet" href="reset.css">
 <style>
-  .clear:after {
-    clear: both; content: ""; display: block; height: 0; visibility: hidden;
-  }
-  body {
-    background-color: #fff;
-  }
-  .container {
-    margin: 0 auto; width: 960px;
-  }
-  #header {
-    background: -moz-linear-gradient(center top , #e6f3e6, #f0f3f0) repeat scroll 0 0 transparent;
-    box-shadow: 0 1px 2px rgba(187, 187, 187, 0.6);
-    /*background-color: #e6f3e6;*/ height: 60px; padding-top: 10px; position: fixed; width: 100%; he\ight: 50px;
-  }
-  #logo {
-    float: left;
-  }
-  #logo a {
-    background: url(qunit-logo.png) no-repeat; display: block; height: 40px; text-indent: -9999px; width: 40px;
-  }
-  #main-nav {
-    margin-left: 60px;
-  }
-  #main-nav li {
-    float: left; line-height: 40px;
-  }
-  #main-nav li a {
-    color: #333; display: block; font-size: 16px; font-weight: bold; padding: 0 10px; text-decoration: none;
-  }
-  #main-nav li a:hover {
-    text-decoration: underline;
-  }
-  #content {
-    padding: 80px 0 20px 0;
-  }
-  #content h2 {
-    font-size: 28px; margin-bottom: 10px;
-  }
-  #content h3 {
-    border-top: 2px #ddd solid; color: #434343; font-size: 24px; margin: 30px 0 10px 0;
-  }
-  #content p {
-    font-size: 14px; line-height: 22px; margin-bottom: 10px;
-  }
-  #content-brief {
+	.clear:after {
+		clear: both; content: ""; display: block; height: 0; visibility: hidden;
+	}
+	body {
+		background-color: #fff;
+	}
+	.container {
+		margin: 0 auto; width: 960px;
+	}
+	#header {
+		background: -moz-linear-gradient(center top , #e6f3e6, #f0f3f0) repeat scroll 0 0 transparent;
+		box-shadow: 0 1px 2px rgba(187, 187, 187, 0.6);
+		/*background-color: #e6f3e6;*/ height: 60px; padding-top: 10px; position: fixed; width: 100%; he\ight: 50px;
+	}
+	#logo {
+		float: left;
+	}
+	#logo a {
+		background: url(qunit-logo.png) no-repeat; display: block; height: 40px; text-indent: -9999px; width: 40px;
+	}
+	#main-nav {
+		margin-left: 60px;
+	}
+	#main-nav li {
+		float: left; line-height: 40px;
+	}
+	#main-nav li a {
+		color: #333; display: block; font-size: 16px; font-weight: bold; padding: 0 10px; text-decoration: none;
+	}
+	#main-nav li a:hover {
+		text-decoration: underline;
+	}
+	#content {
+		padding: 80px 0 20px 0;
+	}
+	#content h2 {
+		font-size: 28px; margin-bottom: 10px;
+	}
+	#content h3 {
+		border-top: 2px #ddd solid; color: #434343; font-size: 24px; margin: 30px 0 10px 0;
+	}
+	#content p {
+		font-size: 14px; line-height: 22px; margin-bottom: 10px;
+	}
+	#content-brief {
 
-  }
-  #download {
-    background-color: #f0f0f0; float: right; height: 140px; width: 200px;
-  }
-  #footer {
-    border-top: 1px #ccc solid; color: #666; height: 55px; padding-top: 10px; he\ight: 45px;
-  }
-  #footer a {
-    color: #666;
-  }
-  #footer-nav {
-    float: right;
-  }
-  #footer-nav li {
-    float: left; padding-left: 10px;
-  }
+	}
+	#download {
+		background-color: #f0f0f0; float: right; height: 140px; width: 200px;
+	}
+	#footer {
+		border-top: 1px #ccc solid; color: #666; height: 55px; padding-top: 10px; he\ight: 45px;
+	}
+	#footer a {
+		color: #666;
+	}
+	#footer-nav {
+		float: right;
+	}
+	#footer-nav li {
+		float: left; padding-left: 10px;
+	}
 </style>
 </head>
 <body>
-  <div id="header">
-    <div class="container">
-      <div id="logo"><a href="#" title="QUnit">Qu</a></div>
-      <ul id="main-nav">
-        <li><a href="#" title="Overview">Overview</a></li>
-        <li><a href="#" title="Getting Started">Getting Started</a></li>
-        <li><a href="#" title="Apı Docs">API Docs</a></li>
-        <li><a href="#" title="Reference">Reference</a></li>
-        <li><a href="#" title="Addons">Addons</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <div id="content">
-      <div class="clear" id="content-brief">
-        <h2>Welcome to the QUnit project!</h2>
-        <div id="download">
-          <h4>Grab the latest version</h4>
-          <p><span class="version">1.2.3</span> - <a class="github" href="https://github.com/jquery/qunit" title="Source">Source</a></p>
-          <p><a id="btn-download" href="/">Download</a></p>
-        </div>
-        <p>
-          QUnit is a powerful, easy-to-use, JavaScript test suite. It's used by the jQuery project to test its code and plugins but is capable of testing any generic JavaScript code (and even capable of testing JavaScript code on the server-side).
-        </p>
-      </div>
-      <div class="clear" id="content-getting-started">
-        <h3>Getting Started</h3>
-        <p>
-          QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
-        </p>
-        <p>
-          Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
-        </p>
-        <p>
-          QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
-        </p>
-      </div>
-      <div class="clear" id="content-api-docs">
-        <h3>API Docs</h3>
-        <p>
-          QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
-        </p>
-        <p>
-          Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
-        </p>
-        <p>
-          QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
-        </p>
-      </div>
-      <div class="clear" id="content-reference">
-        <h3>Reference</h3>
-        <p>
-          QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
-        </p>
-        <p>
-          Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
-        </p>
-        <p>
-          QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
-        </p>
-      </div>
-    </div>
-    <div id="footer">
-      <ul id="footer-nav">
-        <li><a href="#" title="Overview">Overview</a></li>
-        <li><a href="#" title="Getting Started">Getting Started</a></li>
-        <li><a href="#" title="Apı Docs">API Docs</a></li>
-        <li><a href="#" title="Reference">Reference</a></li>
-        <li><a href="#" title="Addons">Addons</a></li>
-      </ul>
-      &copy; 2011 <a href="http://jquery.org" title="The jQuery Projec">The jQuery Project</a>
-    </div>
-  </div>
+	<div id="header">
+	<div class="container">
+		<div id="logo"><a href="#" title="QUnit">Qu</a></div>
+		<ul id="main-nav">
+			<li><a href="#" title="Overview">Overview</a></li>
+			<li><a href="#" title="Getting Started">Getting Started</a></li>
+			<li><a href="#" title="Apı Docs">API Docs</a></li>
+			<li><a href="#" title="Reference">Reference</a></li>
+			<li><a href="#" title="Addons">Addons</a></li>
+		</ul>
+	</div>
+	</div>
+	<div class="container">
+	<div id="content">
+		<div class="clear" id="content-brief">
+		<h2>Welcome to the QUnit project!</h2>
+		<div id="download">
+			<h4>Grab the latest version</h4>
+			<p><span class="version">1.2.3</span> - <a class="github" href="https://github.com/jquery/qunit" title="Source">Source</a></p>
+			<p><a id="btn-download" href="/">Download</a></p>
+		</div>
+		<p>
+			QUnit is a powerful, easy-to-use, JavaScript test suite. It's used by the jQuery project to test its code and plugins but is capable of testing any generic JavaScript code (and even capable of testing JavaScript code on the server-side).
+		</p>
+		</div>
+		<div class="clear" id="content-getting-started">
+		<h3>Getting Started</h3>
+		<p>
+			QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
+		</p>
+		<p>
+			Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
+		</p>
+		<p>
+			QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
+		</p>
+		</div>
+		<div class="clear" id="content-api-docs">
+		<h3>API Docs</h3>
+		<p>
+			QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
+		</p>
+		<p>
+			Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
+		</p>
+		<p>
+			QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
+		</p>
+		</div>
+		<div class="clear" id="content-reference">
+		<h3>Reference</h3>
+		<p>
+			QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you'll spot it immediately and know how to fix it, because you know what code you just changed.
+		</p>
+		<p>
+			Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
+		</p>
+		<p>
+			QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code. 
+		</p>
+		</div>
+	</div>
+	<div id="footer">
+		<ul id="footer-nav">
+			<li><a href="#" title="Overview">Overview</a></li>
+			<li><a href="#" title="Getting Started">Getting Started</a></li>
+			<li><a href="#" title="Apı Docs">API Docs</a></li>
+			<li><a href="#" title="Reference">Reference</a></li>
+			<li><a href="#" title="Addons">Addons</a></li>
+		</ul>
+		&copy; 2011 <a href="http://jquery.org" title="The jQuery Projec">The jQuery Project</a>
+	</div>
+	</div>
 </body>
 </html>
